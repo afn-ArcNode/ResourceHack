@@ -16,13 +16,13 @@ description = '''
 [[dependencies.resourcehack]]
 modId = "forge"
 mandatory = true
-versionRange = "[39,)"
+versionRange = "[47,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.resourcehack]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.18.1,)"
+versionRange = "[1.20.1,)"
 ordering = "NONE"
 side = "BOTH"

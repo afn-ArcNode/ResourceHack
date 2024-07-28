@@ -33,6 +33,7 @@ dependencies {
     common(project(path: ':mod:common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':mod:common', configuration: 'transformProductionFabric')
 
+    common project(":all-common")
     shadowBundle project(":all-common")
 }
 

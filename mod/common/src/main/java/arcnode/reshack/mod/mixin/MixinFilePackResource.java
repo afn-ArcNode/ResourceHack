@@ -5,7 +5,7 @@ import arcnode.reshack.mod.access.ForgeAccessHack;
 import net.minecraft.server.packs.FilePackResources;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.ModifyArg;
+import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -13,9 +13,10 @@ import java.util.UUID;
 
 @Mixin(FilePackResources.class)
 public class MixinFilePackResource {
-    @ModifyArg(
+    @ModifyVariable(
             method = "<init>",
-            at = @At(value = "INVOKE", target = "Lnet/minecraft/server/packs/AbstractPackResources;<init>(Ljava/io/File;)V")
+            at = @At(value = "HEAD", ordinal = 0),
+            argsOnly = true
     )
     private static File injectConstructor(File file) {
         try {
