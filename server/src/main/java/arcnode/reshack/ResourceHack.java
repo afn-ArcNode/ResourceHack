@@ -21,6 +21,7 @@ public class ResourceHack extends JavaPlugin implements PacketListener {
     @Getter
     private static ResourceHack instance;
 
+    private Metrics metrics;
     private byte[] clientConfigData = new byte[0];
 
     @Override
@@ -45,6 +46,10 @@ public class ResourceHack extends JavaPlugin implements PacketListener {
 
         // Register command
         Bukkit.getCommandMap().register(getName(), new EncryptCommand());
+
+        // Setup metrics
+        getSLF4JLogger().info("Setting up metrics");
+        metrics = new Metrics(this, 22807);
     }
 
     @Override
