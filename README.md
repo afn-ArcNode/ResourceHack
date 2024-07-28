@@ -10,14 +10,14 @@ Minecraft server resource pack protection tool
 </div>
 
 <!-- Part: Features -->
-<div style="text-align: center"><h2>Features</h2></div>
+<div align="center"><h2>Features</h2></div>
 
 - Remove server resource confirmation screen (Auto-confirm)
 - Encrypt resource packs
 - Prevent unnecessary resource reloading (Switching server behind a proxy)
 
 <!-- Part: Usage -->
-<div style="text-align: center"><h2>Usage</h2></div>
+<div align="center"><h2>Usage</h2></div>
 
 ### Client
 Install the mod, no more configurations needed
