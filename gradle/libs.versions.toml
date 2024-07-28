@@ -1,7 +1,7 @@
 [versions]
 shadow = "8.1.8"
 kotlin = "2.0.0"
-netty = "4.1.68.Final"
+netty = "4.1.82.Final"
 run-task = "2.3.0"
 
 [plugins]
