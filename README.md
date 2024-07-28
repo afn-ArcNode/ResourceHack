@@ -11,6 +11,12 @@ Other versions could be found [here](https://github.com/afn-ArcNode/ResourceHack
 <img alt="forge" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/forge_vector.svg">
 </div>
 
+<div align="center">
+
+<a href="https://hangar.papermc.io/DvArcNode/ResourceHack"><img alt="hangar" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/hangar_vector.svg"></a>
+
+</div>
+
 <!-- Part: Features -->
 <div align="center"><h2>Features</h2></div>
 
