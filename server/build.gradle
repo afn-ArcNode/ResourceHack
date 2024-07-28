@@ -1,0 +1,32 @@
+plugins {
+    alias libs.plugins.shadow
+    alias libs.plugins.run.paper
+}
+
+repositories {
+    maven { url "https://repo.papermc.io/repository/maven-public/" }
+    maven { url 'https://repo.codemc.io/repository/maven-releases/' }
+}
+
+dependencies {
+    compileOnly "io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT"
+
+    compileOnly libs.netty.buffer
+    compileOnly 'com.github.retrooper:packetevents-spigot:2.4.0'
+
+    implementation project(":all-common")
+}
+
+runServer {
+    minecraftVersion("1.18.1")
+
+    downloadPlugins {
+        url("https://cdn.modrinth.com/data/HYKaKraK/versions/MfD5eOYA/packetevents-spigot-2.4.0.jar")
+    }
+}
+
+processResources {
+    filesMatching("plugin.yml") {
+        expand "version": rootProject.version
+    }
+}

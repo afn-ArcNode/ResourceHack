@@ -1,0 +1,58 @@
+plugins {
+    alias libs.plugins.shadow
+}
+
+loom {
+    forge {
+        mixinConfig "resourcehack.mixins.json"
+    }
+}
+
+architectury {
+    platformSetupLoomIde()
+    forge()
+}
+
+configurations {
+    common {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentForge.extendsFrom common
+
+    // Files in this configuration will be bundled into your mod using the Shadow plugin.
+    // Don't use the `shadow` configuration from the plugin itself as it's meant for excluding files.
+    shadowBundle {
+        canBeResolved = true
+        canBeConsumed = false
+    }
+}
+
+dependencies {
+    forge "net.minecraftforge:forge:$parent.forge_version"
+
+    common(project(path: ':mod:common', configuration: 'namedElements')) { transitive false }
+    shadowBundle project(path: ':mod:common', configuration: 'transformProductionForge')
+
+    forgeRuntimeLibrary project(":all-common")
+    shadowBundle project(":all-common")
+}
+
+processResources {
+    inputs.property 'version', project.version
+
+    filesMatching('META-INF/mods.toml') {
+        expand version: project.version
+    }
+}
+
+shadowJar {
+    configurations = [project.configurations.shadowBundle]
+    archiveClassifier = 'dev-shadow'
+}
+
+remapJar {
+    input.set shadowJar.archiveFile
+}

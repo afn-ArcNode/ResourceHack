@@ -1,0 +1,30 @@
+plugins {
+}
+
+group = 'arcnode'
+version = '1.0-SNAPSHOT'
+
+allprojects {
+    plugins.apply("java-library")
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compileOnly 'org.projectlombok:lombok:1.18.34'
+        annotationProcessor 'org.projectlombok:lombok:1.18.34'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+subprojects {
+    group = rootProject.group
+    version = rootProject.version
+
+    dependencies {
+    }
+}

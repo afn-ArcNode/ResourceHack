@@ -1,0 +1,7 @@
+name: "ResourceHack"
+author: "ArcNode"
+version: "${version}"
+api-version: "1.18"
+main: "arcnode.reshack.ResourceHack"
+depend:
+  - packetevents

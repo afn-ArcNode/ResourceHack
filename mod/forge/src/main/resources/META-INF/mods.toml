@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[39,)"
+#issueTrackerURL = ""
+license = "PolyForm Shield License 1.0.0"
+
+[[mods]]
+modId = "resourcehack"
+version = "${version}"
+displayName = "ResourceHack"
+authors = "ArcNode"
+description = '''
+
+'''
+#logoFile = ""
+
+[[dependencies.resourcehack]]
+modId = "forge"
+mandatory = true
+versionRange = "[39,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.resourcehack]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.1,)"
+ordering = "NONE"
+side = "BOTH"
