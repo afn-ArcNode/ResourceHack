@@ -37,13 +37,11 @@ public final class ResourceHack {
     }
 
     public static void sendRequest() {
-//        Minecraft.getInstance().doRunTask(() -> {
-            LOG.info("Sending configuration request");
-            Minecraft.getInstance().getConnection().send(new ServerboundCustomPayloadPacket(
-                    channelConfig,
-                    new FriendlyByteBuf(Unpooled.buffer())
-            ));
-//        });
+        LOG.info("Sending configuration request");
+        Minecraft.getInstance().getConnection().send(new ServerboundCustomPayloadPacket(
+                channelConfig,
+                new FriendlyByteBuf(Unpooled.buffer())
+        ));
     }
 
     public static boolean configure(ClientboundCustomPayloadPacket packet) {

@@ -9,7 +9,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 import arcnode.reshack.mod.ResourceHack;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(ResourceHack.MOD_ID)
 @OnlyIn(Dist.CLIENT)

@@ -3,17 +3,13 @@ package arcnode.reshack.mod.mixin;
 import arcnode.reshack.mod.ResourceHack;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundCustomPayloadPacket;
-import net.minecraft.resources.ResourceLocation;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(value = ClientboundCustomPayloadPacket.class, priority = 1514)
 public abstract class MixinClientboundCustomPayloadPacket {
-    @Shadow public abstract ResourceLocation getIdentifier();
-
     @Inject(
             method = "handle(Lnet/minecraft/network/protocol/game/ClientGamePacketListener;)V",
             at = @At("HEAD"),
