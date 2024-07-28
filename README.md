@@ -1,11 +1,9 @@
-<div style="text-align: center">
+<div align="center">
 <h1>ResourceHack</h1>
 Minecraft server resource pack protection tool
 
 ![Minecraft Version](https://img.shields.io/badge/Minecraft_Version-1.18.1-green?style=for-the-badge)
 
-</div>
-<div style="text-align: center">
 <img alt="paper" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/paper_vector.svg">
 <img alt="fabric" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/fabric_vector.svg">
 <img alt="forge" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/supported/forge_vector.svg">
