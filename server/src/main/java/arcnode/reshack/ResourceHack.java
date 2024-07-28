@@ -45,6 +45,8 @@ public class ResourceHack extends JavaPlugin implements PacketListener {
 
         // Register command
         Bukkit.getCommandMap().register(getName(), new EncryptCommand());
+
+        new Metrics(this, 22807);
     }
 
     @Override
