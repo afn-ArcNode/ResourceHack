@@ -14,6 +14,7 @@ Other versions could be found [here](https://github.com/afn-ArcNode/ResourceHack
 <div align="center">
 
 <a href="https://hangar.papermc.io/DvArcNode/ResourceHack"><img alt="hangar" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/hangar_vector.svg"></a>
+<a href="https://www.minebbs.com/resources/mod.9024/"><img alt="MineBBS" height="40" src="assets/minebbs_badge.svg"></a>
 
 </div>
 
