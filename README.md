@@ -15,6 +15,7 @@ Other versions could be found [here](https://github.com/afn-ArcNode/ResourceHack
 
 <a href="https://hangar.papermc.io/DvArcNode/ResourceHack"><img alt="hangar" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/hangar_vector.svg"></a>
 <a href="https://www.minebbs.com/resources/mod.9024/"><img alt="MineBBS" height="40" src="assets/minebbs_badge.svg"></a>
+<a href="https://modrinth.com/plugin/resourcehack"><img alt="modrinth" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/available/modrinth_vector.svg"></a>
 
 </div>
 
